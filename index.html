@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .barChart {
+        width: fit-content;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 5px;
+      }
+      .tooltip {
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+      }
+      .disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+
+    <div class="barChart"></div>
+
+    <div class="tooltip disabled">
+      <div class="age"><span>Age:</span> <span class="value"></span></div>
+      <div class="weight"><span>Weight:</span> <span class="value"></span></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
